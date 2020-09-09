@@ -3,16 +3,16 @@ public class FirstClass {
 
         Notebook notebook = new Notebook ("600g",2000);
         System.out.println(notebook.weight+" "+notebook.price);
-        System.out.println(notebook.price);
+        notebook.checkPrice();
 
         Notebook heavyNotebook = new Notebook ("2000g",1800);
         System.out.println(heavyNotebook.weight+" "+heavyNotebook.price);
-        System.out.println(heavyNotebook.price);
+        heavyNotebook.checkPrice();
 
-        Notebook oldNotebook = new Notebook ("1200g",1600);
+        Notebook oldNotebook = new Notebook ("1200g",800);
         System.out.println(oldNotebook.weight+ " "+oldNotebook.price);
-        System.out.println(oldNotebook.price);
+        oldNotebook.checkPrice();
 
+        }
 
     }
-}
