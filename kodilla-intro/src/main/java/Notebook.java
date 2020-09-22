@@ -12,39 +12,45 @@ public class Notebook {
     public void checkPrice() {
         if (this.price <= 500) {
             System.out.println("This notebook is very cheap.");
-        } else if (this.price < 500 && this.price >= 1000) {
-            System.out.println( "The price is good");
-        }else {
+        } else if (this.price > 500 && this.price <= 1000) {
+            System.out.println("The price is good");
+        } else {
             System.out.println("The notebook is expensive");
         }
 
-        }
+    }
 
     public void checkWeight() {
-        if (this.weight >= 500) {
+        if (this.weight <= 600) {
             System.out.println("This notebook is very light.");
-        } else if (this.weight >= 1600 && this.weight <= 1900) {
+        } else if (this.weight > 600 && this.weight <= 1600) {
             System.out.println("This notebook is quite light");
         } else {
             System.out.println("This notebook is heavy");
         }
     }
 
-    public void checkYear(){
-        if (this.price <= 500) {
-            System.out.println("perfect for home use");
+    public void checkYear() {
+        if (this.year <= 2015) {
+            System.out.println("This notebook is perfect for home use");
+        } else if (this.year <= 2017 && this.year < 2018) {
+            System.out.println("This notebook is good for work");
+        } else {
+            System.out.println("This notebook is perfect at work and home");
         }
-        else if (this.year <= 2010) {
-            System.out.println("perfect for home use");
-        }
-        else if (this.price < 200) {
-            System.out.println ("suspisiously low price");
-        }
-        else {
-            System.out.println("think again");
+    }
+
+    public void comparePriceAndYear() {
+        if (this.year == 2018 && this.price == 1000) {
+            System.out.println("This is amazing opportunity!");
+        } else if (this.year < 2014) {
+            System.out.println("This hardware may be too weak");
         }
     }
 }
+
+    
+
 
 
 
