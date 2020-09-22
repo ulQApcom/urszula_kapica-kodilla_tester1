@@ -19,11 +19,5 @@ public class SimpleArray {
 
 
         System.out.println("Moja tablica zawiera "+ numberOfElements+" pozycji");
-
-
-
-
-
-
     }
 }
