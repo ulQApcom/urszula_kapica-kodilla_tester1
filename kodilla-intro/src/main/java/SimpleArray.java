@@ -11,7 +11,7 @@ public class SimpleArray {
         series1[3]="Chernobyl";
         series1[4]="Outlander";
 
-        String serieses=series1[3];
+        String serieses = series1[3];
         System.out.println(series[3]);
         System.out.println(serieses);
 
