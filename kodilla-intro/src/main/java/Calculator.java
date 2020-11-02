@@ -8,5 +8,12 @@ public class Calculator {
         return a-b;
     }
 
+    public double circleArea(double r){
+        return PI * r * r;
+    }
+
+    public double circlePerimeter( double r){
+        return 2 * PI * r;
+    }
 
 }
