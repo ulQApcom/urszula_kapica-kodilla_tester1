@@ -1,20 +1,16 @@
 import java.security.interfaces.RSAMultiPrimePrivateCrtKey;
 
 public class Grades{
-    public static void main(String[]args){
-        Grades grades = new Grades();
-        grades.add(2);
-        grades.add(7);
-        grades.add(1);
+    private int [] grades;
 
-        System.out.println(grades.size);
-        System.out.println(grades.LastGrade());
-        System.out.println(grades.SumGrades(grades.grades));
+    public int[] getGrades() {
+        return grades;
     }
 
+    public int getSize() {
+        return size;
+    }
 
-
-    private int [] grades;
     private int size;
 
     public Grades(){
@@ -29,12 +25,10 @@ public class Grades{
 
         this.grades[this.size] = value;
         this.size++;
-
     }
 
     public int LastGrade(){
         return this.grades[this.size-1];
-
     }
 
     public int SumGrades(int[]grades){
@@ -44,5 +38,4 @@ public class Grades{
         }
         return result;
     }
-
 }

@@ -17,7 +17,6 @@ public class Notebook {
         } else {
             System.out.println("The notebook is expensive");
         }
-
     }
 
     public void checkWeight() {
@@ -48,17 +47,3 @@ public class Notebook {
         }
     }
 }
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
