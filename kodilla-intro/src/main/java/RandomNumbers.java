@@ -4,43 +4,39 @@ import java.util.Random;
 
 
 public class RandomNumbers {
+    private static int max = 0;
+    private static int min = 30;
 
-
-    private List<Integer> drawnNumbers = new ArrayList();
     public static void main(String[] args) {
         RandomNumbers randomNumbers = new RandomNumbers();
         randomNumbers.getCountOfRandomNumber();
 
-        System.out.println(randomNumbers.getMaxNumber());
-        System.out.println(randomNumbers.getMinNumber());
+        System.out.println(max);
+        System.out.println(min);
     }
-    public int getCountOfRandomNumber() {
+
+    public void getCountOfRandomNumber() {
         Random random = new Random();
-        int result = 0;
         int sum = 0;
+
         while (sum < 5000) {
             int temp = random.nextInt(31);
-            drawnNumbers.add(temp);
+            getMaxNumber(temp);
+            getMinNumber(temp);
             sum = sum + temp;
-            result++;
         }
-        return result;
     }
-    public int getMaxNumber() {
-        int max = drawnNumbers.get(0);
-        for (int i = 0 ; i < drawnNumbers.size(); i++) {
-            if (drawnNumbers.get(i) > max) {
-                max = drawnNumbers.get(i);
-            }
+    
+    public int getMaxNumber(int number) {
+        if (number > max){
+            max = number;
         }
-        return max;
+        return  max;
     }
-    public int getMinNumber() {
-        int min = drawnNumbers.get(0);
-        for (int i = 0; i < drawnNumbers.size(); i++) {
-            if (drawnNumbers.get(i) < min) {
-                min = drawnNumbers.get(i);
-            }
+
+    public int getMinNumber(int number) {
+        if (number < min){
+            min = number;
         }
         return min;
     }

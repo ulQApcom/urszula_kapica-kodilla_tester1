@@ -8,9 +8,5 @@ public class Man{
         this.name = name;
         this.age = age;
         this.height = height;
-
-
     }
-
-
 }
