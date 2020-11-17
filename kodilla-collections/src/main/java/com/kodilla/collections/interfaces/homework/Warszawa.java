@@ -1,9 +1,35 @@
 package com.kodilla.collections.interfaces.homework;
 
+import java.util.Objects;
+
 public class Warszawa implements Car{
     private int speed;
     private  int increase;
     private  int decrease;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Warszawa warszawa = (Warszawa) o;
+        return speed == warszawa.speed &&
+                increase == warszawa.increase &&
+                decrease == warszawa.decrease;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(speed, increase, decrease);
+    }
+
+    @Override
+    public String toString() {
+        return "Warszawa{" +
+                "speed=" + speed +
+                ", increase=" + increase +
+                ", decrease=" + decrease +
+                '}';
+    }
 
     public Warszawa(int speed, int increase, int decrease){
         this.speed = speed;
