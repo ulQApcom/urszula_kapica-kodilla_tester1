@@ -6,11 +6,12 @@ public class JobApplication {
         Developer developer = new Developer(5000,"software development");
         developer.getResponsibilities();
         developer.getSalary();
-        System.out.println();
+        System.out.println(developer.getSalary());
+        System.out.println(developer.getResponsibilities());
 
         Tester tester = new Tester(3000,"software testing");
-        developer.getResponsibilities();
-        developer.getSalary();
+        tester.getResponsibilities();
+        tester.getSalary();
 
         UxDesigner uxDesigner = new UxDesigner(4000,"user experience design");
         uxDesigner.getResponsibilities();
