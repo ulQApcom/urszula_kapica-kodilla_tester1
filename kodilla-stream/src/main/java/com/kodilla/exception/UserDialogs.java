@@ -1,4 +1,4 @@
-package com.kodilla.exeption;
+package com.kodilla.exception;
 
 import java.util.Scanner;
 

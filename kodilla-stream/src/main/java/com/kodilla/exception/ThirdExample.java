@@ -1,4 +1,4 @@
-package com.kodilla.exeption;
+package com.kodilla.exception;
 
 public class ThirdExample {
     public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class ThirdExample {
         } catch (AirportNotFoundException e) {
             System.out.println("Sorry, this airport cannot be served by our airlines");
         } finally {
-            System.out.println("Thank you for using Kodilla Airlanes");
+            System.out.println("Thank you for using Kodilla Airlines");
         }
     }
 }

@@ -1,15 +1,15 @@
-package com.kodilla.exeption;
+package com.kodilla.exception;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class AirportRepository {
     private Map<String, Boolean> getListOfAirports(){
-        Map<String, Boolean>airports = new HashMap<>();
+        Map<String, Boolean> airports = new HashMap<>();
         airports.put("Miami",true);
         airports.put("Malta",true);
         airports.put("LasPalmas",false);
-        airports.put("Warszaw", true);
+        airports.put("Warsaw", true);
         return airports;
     }
     public boolean isAirportInUse( String airport) throws AirportNotFoundException {
