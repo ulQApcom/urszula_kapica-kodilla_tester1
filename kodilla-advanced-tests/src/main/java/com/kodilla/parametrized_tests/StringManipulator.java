@@ -1,5 +1,9 @@
 package com.kodilla.parametrized_tests;
 
+import com.sun.jdi.connect.Connector;
+
+import java.util.stream.Stream;
+
 public class StringManipulator {
 
     public String reverseWithLowerCase(String input){
@@ -7,7 +11,7 @@ public class StringManipulator {
         return builder.reverse().toString().toLowerCase();
     }
     public int getStringLengthWithoutSpaces(String input){
-        String value = input.replaceAll(" ","");
+        String value = input.replaceAll("  ","");
         return value.length();
     }
 
@@ -16,4 +20,6 @@ public class StringManipulator {
         return count;
     }
 
-}
+
+    }
+
