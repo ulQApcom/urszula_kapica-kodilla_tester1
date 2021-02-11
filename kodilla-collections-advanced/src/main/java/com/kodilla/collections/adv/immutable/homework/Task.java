@@ -7,10 +7,7 @@ public final class Task {
     public Task(String title, int duration) {
         this.title = title;
         this.duration = duration;
-
-        System.out.println(task.getTitle() + " " + "duration time" + " " + task.getDuration());
     }
-    Task task = new Task("resolve the task", 15);
 
     public String getTitle() {
         return title;
