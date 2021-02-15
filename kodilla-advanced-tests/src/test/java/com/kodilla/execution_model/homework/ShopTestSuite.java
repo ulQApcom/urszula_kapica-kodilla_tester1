@@ -11,19 +11,19 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class ShopTestSuite {
     Shop shop = new Shop();
-    LocalDate date1 = LocalDate.of(2021, Month.FEBRUARY,10);
-    LocalDate date2 = LocalDate.of(2021,Month.MARCH,15);
-    LocalDate date3 = LocalDate.of(2021,Month.JANUARY,25);
+    LocalDate dateone = LocalDate.of(2021, Month.FEBRUARY,10);
+    LocalDate datetwo = LocalDate.of(2021,Month.MARCH,15);
+    LocalDate datethree = LocalDate.of(2021,Month.JANUARY,25);
 
-    Order order1 = new Order(date1,100,"Ula82");
-    Order order2 = new Order(date2,200,"Karo93");
-    Order order3 = new Order(date3,300,"Ann00");
+    Order orderone = new Order(dateone,100,"Ula82");
+    Order ordertwo = new Order(datetwo,200,"Karo93");
+    Order orderthree = new Order(datethree,300,"Ann00");
 
     @BeforeEach
     public void before(){
-        shop.addOrder(order1);
-        shop.addOrder(order2);
-        shop.addOrder(order3);
+        shop.addOrder(orderone);
+        shop.addOrder(ordertwo);
+        shop.addOrder(orderthree);
     }
 
     @Test
